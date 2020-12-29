@@ -1,0 +1,30 @@
+create database trabajoJava;
+
+
+
+use trabajoJava;
+
+
+create table admin(codigo int(2)primary key,nombre varchar(10),pass varchar(10),estado varchar(10));
+
+create table encuestador(rute int(9)primary key,nombre varchar(10),pass varchar(10),estado varchar(10));
+
+create table encuesta(rut int(9)primary key,nombreEncu varchar(25),apellido varchar(25),edad int(3),peso int(3),estatura float(2),imc float(3),fecha varchar(30),estado varchar(20),nombreEncuestador varchar(10));
+
+
+
+insert into admin(codigo,nombre,pass,estado)values (1,'javierd','duoc','inactivo');
+
+insert into admin(codigo,nombre,pass,estado)values (2,'sebastianm','java','inactivo');
+
+
+
+insert into encuestador(rute,nombre,pass,estado)values(184294036,'juanp','qwe','inactivo');
+
+insert into encuestador(rute,nombre,pass,estado)values(181234567,'fabianp','abc','inactivo');
+
+
+
+insert into encuesta(rut,nombreEncu,apellido,edad,peso,estatura,imc,fecha,estado,nombreEncuestador) values(32532,'gshbdf','gdsgsg',22,108,1.90,29.9,'2015/11/11  1:14:46','SOBRE PESO','juanp');
+
+insert into encuesta(rut,nombreEncu,apellido,edad,peso,estatura,imc,fecha,estado,nombreEncuestador) values(12345,'javier','de la o',22,77,1.70,26.6435,'2015/11/11 00:34:22','SOBRE PESO','fabianp');
